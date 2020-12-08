@@ -1,0 +1,11 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <div class="nav-wrapper">
+      <div class="nav-item" routerLink="1" (click)="goTo()" routerLinkActive="active">First part</div>
+      <div class="nav-item" routerLink="2" (click)="goTo()" routerLinkActive="active">Second part</div>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
